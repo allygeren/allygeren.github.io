@@ -6,31 +6,95 @@
     <title>Ally Geren</title>
     <link rel="stylesheet" href="web.css"> <!-- Link to your CSS file -->
     <style>
-        /* Optional inline styles can go here, but external CSS is preferred */
+        /* Apply custom colors */
+        :root {
+            --dark-purple: #231942;
+            --medium-purple: #5e548e;
+            --light-purple: #9f86c0;
+            --pink: #be95c4;
+            --light-pink: #e0b1cb;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--light-pink);
+        }
+
+        header {
+            background-color: var(--dark-purple);
+            color: var(--light-purple);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--medium-purple);
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: var(--light-purple);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .linkedin-button {
+            margin-left: auto;
+        }
+
+        .linkedin-button img {
+            width: 25px;
+            height: 25px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--medium-purple);
+            color: var(--light-purple);
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
 
 <header>
     <h1>Ally Geren</h1>
-    <a href="https://www.linkedin.com/in/allygeren" target="_blank" style="text-decoration: none;">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 40px; height: 40px; vertical-align: middle;">
-    </a>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <a href="https://www.linkedin.com/in/allygeren" target="_blank" class="linkedin-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
 </nav>
 
 <main>
     <h2>Welcome to My Website!</h2>
-    <p>
-Hi there!\nMy name is Ally Geren, and I’m a junior studying Computer Science at the University of Illinois Urbana-Champaign, currently spending a semester abroad in Vienna. I’ve been coding since fourth grade, when I got my start on Scratch, and I’m now preparing for an exciting summer as a Software Engineering Intern at Netflix.
-\nWhen I’m not coding, I’m probably reading (fiction is my favorite), playing piano, or out on a long run. Studying abroad has been an incredible adventure so far, and I’m looking forward to writing about my experiences and discoveries while exploring Europe.
-</p>
+    <p>Hi there!\nMy name is Ally Geren, and I’m a junior studying Computer Science at the University of Illinois Urbana-Champaign, currently spending a semester abroad in Vienna. I’ve been coding since fourth grade, when I got my start on Scratch, and I’m now preparing for an exciting summer as a Software Engineering Intern at Netflix, following a previous internship at Chevron.
+        \nWhen I’m not coding, I’m probably reading (fiction is my favorite), playing piano, or out on a long run. Studying abroad has been an incredible adventure so far, and I’m looking forward to writing about my experiences and discoveries while exploring Europe..</p>
 </main>
 
 <footer>
